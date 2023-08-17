@@ -58,9 +58,19 @@ nav .second-nav ul li{
     margin: 0 15px;
 }
 .personal{
-    width: 260px;
+    width: 250px;
     border-radius: 50%;
-    border: 8px solid  rgb(44, 62, 80);
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero div{
+    width: 245px;
+    height: 245px;
+    background-color: rgb(44, 62, 80);
+    border-radius: 50%;
+    position: relative;
 }
 .PROTFOLIO ,.CONTACT-ME{
     display: flex;
@@ -251,6 +261,10 @@ input::placeholder,textarea::placeholder{
     }
     .personal{
         width: 200px;
+    }
+    .hero div{
+        width: 195px;
+        height: 195px;
     }
     input,textarea{
         width: 260px;
