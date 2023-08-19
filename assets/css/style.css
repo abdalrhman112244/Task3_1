@@ -31,6 +31,10 @@ nav .second-nav ul li a,p{
 nav .second-nav ul li{
     padding: 0px 10px;
 }
+.second-nav ul li a:hover {
+    color:aqua;
+    transition: 1s all 0.5s;
+}
 .hero{
     width: 100%;
     height: max-content;
@@ -102,6 +106,16 @@ nav .second-nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.second-PROTFOLIO div:hover{
+    width: 220px;
+    height: 220px;
+    transition: 1s all 0.5s;
+}
+.second-PROTFOLIO div .ph:hover{
+    width: 120px;
+    height: 120px;
+    transition: 1s all 0.5s;
 }
 .photo1{
     background-color: rgb(186, 76, 99);
