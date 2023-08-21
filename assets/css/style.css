@@ -1,19 +1,22 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-html{
+
+html {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
 /* start header */
-header{
+header {
     width: 100%;
     height: max-content;
 }
-nav{
+
+nav {
     width: 100%;
     height: 100px;
     background-color: rgb(44, 62, 80);
@@ -21,50 +24,68 @@ nav{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 999;
 }
-nav .second-nav ul{
+
+nav .second-nav ul {
     list-style: none;
 }
-nav .icon-nav{
+
+nav .icon-nav {
     display: none;
 }
-nav .second-nav ul li a,p{
+
+nav .second-nav ul li a,
+p {
     color: white;
     text-decoration: none;
 }
-nav .second-nav ul li{
+
+nav .second-nav ul li {
     padding: 0px 10px;
 }
+
 .second-nav ul li a:hover {
-    color:aqua;
+    color: aqua;
     transition: 1s all 0.5s;
 }
-.hero{
+
+.hero {
     width: 100%;
-    height: max-content;
+    height: 100vh;
     background-color: rgb(26, 188, 156);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     padding: 100px 0px;
-    gap: 20px 0px;
+    gap: 10px 0px;
 }
-.hero ul,.ABOUT ul{
+
+.hero ul,
+.ABOUT ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.star{
+
+.star {
     width: 30px;
     height: 30px;
 }
-.hero .hr,.ABOUT .hr,.CONTACT-ME .hr,.PROTFOLIO .hr{
+
+.hero .hr,
+.ABOUT .hr,
+.CONTACT-ME .hr,
+.PROTFOLIO .hr {
     position: relative;
 }
-.hero .hr::before ,.ABOUT .hr::before{
+
+.hero .hr::before,
+.ABOUT .hr::before {
     content: " ";
     display: block;
     width: 120px;
@@ -74,7 +95,9 @@ nav .second-nav ul li{
     left: 35px;
     top: 50%;
 }
-.hero .hr::after,.ABOUT .hr::after{
+
+.hero .hr::after,
+.ABOUT .hr::after {
     content: " ";
     display: block;
     width: 120px;
@@ -84,24 +107,29 @@ nav .second-nav ul li{
     right: 35px;
     top: 50%;
 }
-.personal{
+
+.personal {
     width: 250px;
     border-radius: 50%;
     position: absolute;
     top: 34%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    
 }
-.hero div{
+
+.hero div {
     width: 245px;
     height: 245px;
     background-color: rgb(44, 62, 80);
     border-radius: 50%;
     position: relative;
 }
+
 /* end header */
 /* start PROTFOLIO */
-.PROTFOLIO ,.CONTACT-ME{
+.PROTFOLIO,
+.CONTACT-ME {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,12 +137,15 @@ nav .second-nav ul li{
     padding: 50px 0px;
     margin: 30px 0px;
 }
-.star1{
+
+.star1 {
     width: 30px;
     height: 30px;
     color: rgb(44, 62, 80);
 }
-.CONTACT-ME .hr::before ,.PROTFOLIO .hr::before{
+
+.CONTACT-ME .hr::before,
+.PROTFOLIO .hr::before {
     content: " ";
     display: block;
     width: 120px;
@@ -124,7 +155,9 @@ nav .second-nav ul li{
     left: 35px;
     top: 50%;
 }
-.CONTACT-ME .hr::after ,.PROTFOLIO .hr::after{
+
+.CONTACT-ME .hr::after,
+.PROTFOLIO .hr::after {
     content: " ";
     display: block;
     width: 120px;
@@ -134,62 +167,79 @@ nav .second-nav ul li{
     right: 35px;
     top: 50%;
 }
-.PROTFOLIO h2, .CONTACT-ME h2{
+
+.PROTFOLIO h2,
+.CONTACT-ME h2 {
     color: rgb(44, 62, 80);
 }
-.second-PROTFOLIO div{
+
+.second-PROTFOLIO div {
     width: 200px;
     height: 200px;
-    margin: 30px ;
+    margin: 30px;
     padding: 100px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.second-PROTFOLIO div:hover{
+
+.second-PROTFOLIO div:hover {
     width: 220px;
     height: 220px;
     transition: 1s all 0.5s;
 }
-.second-PROTFOLIO div .ph:hover{
+
+.second-PROTFOLIO div .ph:hover {
     width: 140px;
     transition: 1s all 0.5s;
 }
-.photo1{
+
+.photo1 {
     background-color: rgb(186, 76, 99);
 }
-.photo2{
-    background-color: rgb(31,164 ,182);
+
+.photo2 {
+    background-color: rgb(31, 164, 182);
 }
-.photo3{
-    background-color: rgb(19,15 ,15);
+
+.photo3 {
+    background-color: rgb(19, 15, 15);
 }
-.photo4{
-    background-color: rgb(29,131 ,192);
+
+.photo4 {
+    background-color: rgb(29, 131, 192);
 }
-.photo5{
-    background-color: rgb(16,55 ,181);
+
+.photo5 {
+    background-color: rgb(16, 55, 181);
 }
-.photo6{
-    background-color: rgb(204,178 ,163);
+
+.photo6 {
+    background-color: rgb(204, 178, 163);
 }
-.ph{
+
+.ph {
     width: 120px;
 }
-.second-PROTFOLIO{
+
+.second-PROTFOLIO {
     width: 70vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.PROTFOLIO h2 , .ABOUT h2,.CONTACT-ME h2{
+
+.PROTFOLIO h2,
+.ABOUT h2,
+.CONTACT-ME h2 {
     padding: 20px 0px;
 }
+
 /* end PROTFOLIO */
 /* start about */
-.ABOUT{
+.ABOUT {
     width: 100%;
     height: max-content;
     background-color: rgb(26, 188, 156);
@@ -200,41 +250,49 @@ nav .second-nav ul li{
     padding: 100px 0px;
     margin: 30px 0px;
 }
-.ABOUT a{
+
+.ABOUT a {
     text-decoration: none;
     border: 4px solid white;
     border-radius: 8px;
     padding: 20px;
     display: flex;
 }
+
 .second-about ul li {
     margin: 20px 0px;
     padding: 0 20px;
 }
-.second-about ul li p{
-   width: 285px;
-   height: 120px;
+
+.second-about ul li p {
+    width: 285px;
+    height: 120px;
 }
-.download-icon{
+
+.download-icon {
     width: 20px;
     height: 20px;
     color: white;
-    margin: 0px 10px ;
+    margin: 0px 10px;
 }
+
 /* end about */
 /* start contact me */
-input,textarea{
+input,
+textarea {
     width: 640px;
     outline: none;
     border: none;
-    border-bottom: 2px solid rgb(108, 117, 167) ;
+    border-bottom: 2px solid rgb(108, 117, 167);
     padding: 30px 0px;
     margin: 20px 0px;
 }
-textarea{
+
+textarea {
     height: 100px;
 }
-.CONTACT-ME form button{
+
+.CONTACT-ME form button {
     width: 100px;
     height: 65px;
     border-radius: 8px;
@@ -242,27 +300,31 @@ textarea{
     background-color: rgb(26, 188, 156);
     color: white;
 }
-.CONTACT-ME{
+
+.CONTACT-ME {
     padding: 100px 0px;
     margin: 30px 0px;
 }
 
-input::placeholder,textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     font-size: 1.2rem;
 }
+
 /* end contact me */
 /* start footer  */
-.parent{
+.parent {
     padding: 50px 0;
     width: 100%;
     height: max-content;
-    background-color: rgb(44,62 ,80 );
+    background-color: rgb(44, 62, 80);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.parent2{
+
+.parent2 {
     width: 100%;
     height: max-content;
     background-color: rgb(26, 37, 47);
@@ -271,36 +333,45 @@ input::placeholder,textarea::placeholder{
     align-items: center;
     padding: 20px 0px;
 }
-.child ,.child3{
+
+.child,
+.child3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
 }
-.child3{
+
+.child3 {
     width: 180px;
     text-align: center;
 }
-.child h3 ,.child3 h3{
+
+.child h3,
+.child3 h3 {
     padding: 20px 0px;
     width: max-content;
 }
-.child3 p a{
+
+.child3 p a {
     color: rgb(26, 188, 156);
 }
-.child ul{
+
+.child ul {
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
 }
-.parent2 p span{
+
+.parent2 p span {
     border: 1px solid white;
     padding: 0 5px;
     border-radius: 50%;
 }
-.icon{
+
+.icon {
     width: 20px;
     height: 20px;
     padding: 20px;
@@ -309,45 +380,63 @@ input::placeholder,textarea::placeholder{
     border: 2px solid white;
     border-radius: 100px;
 }
+
 /* end footer */
-.display-flex{
+.display-flex {
     display: flex;
 }
+
 @media screen and (max-width:700px) {
-    .hero h1{
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
         font-size: 1.5rem;
     }
-    .personal{
+
+    .personal {
         width: 200px;
     }
-    .hero div{
+
+    .hero div {
         width: 195px;
         height: 195px;
     }
-    .CONTACT-ME .hr::before
-     ,.PROTFOLIO .hr::before
-     ,.hero .hr::after,.ABOUT .hr::after
-     ,.hero .hr::before ,.ABOUT .hr::before
-     ,.CONTACT-ME .hr::after
-    ,.PROTFOLIO .hr::after{
+
+    .CONTACT-ME .hr::before,
+    .PROTFOLIO .hr::before,
+    .hero .hr::after,
+    .ABOUT .hr::after,
+    .hero .hr::before,
+    .ABOUT .hr::before,
+    .CONTACT-ME .hr::after,
+    .PROTFOLIO .hr::after {
         width: 70px;
     }
-    input,textarea{
+
+    input,
+    textarea {
         width: 260px;
     }
-    .hero p{
+
+    .hero p {
         font-size: 0.8rem;
     }
-    nav .icon-nav{
+
+    nav .icon-nav {
         display: block;
     }
-    nav .second-nav ul{
+
+    nav .second-nav ul {
         display: none;
     }
-    .second-about ul li p{
+
+    .second-about ul li p {
         width: 260px;
     }
-    .second-about ul li{
+
+    .second-about ul li {
         padding: 0px;
     }
 }
