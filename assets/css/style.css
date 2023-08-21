@@ -153,8 +153,7 @@ nav .second-nav ul li{
     transition: 1s all 0.5s;
 }
 .second-PROTFOLIO div .ph:hover{
-    width: 120px;
-    height: 120px;
+    width: 140px;
     transition: 1s all 0.5s;
 }
 .photo1{
@@ -176,8 +175,7 @@ nav .second-nav ul li{
     background-color: rgb(204,178 ,163);
 }
 .ph{
-    width: 100px;
-    height: 100px;
+    width: 120px;
 }
 .second-PROTFOLIO{
     width: 70vw;
@@ -211,7 +209,11 @@ nav .second-nav ul li{
 }
 .second-about ul li {
     margin: 20px 0px;
-    padding: 20px;
+    padding: 0 20px;
+}
+.second-about ul li p{
+   width: 285px;
+   height: 120px;
 }
 .download-icon{
     width: 20px;
@@ -232,7 +234,7 @@ input,textarea{
 textarea{
     height: 100px;
 }
-button{
+.CONTACT-ME form button{
     width: 100px;
     height: 65px;
     border-radius: 8px;
@@ -269,17 +271,22 @@ input::placeholder,textarea::placeholder{
     align-items: center;
     padding: 20px 0px;
 }
-.child{
+.child ,.child3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
 }
-.child h3{
-    padding: 20px 0px;
+.child3{
+    width: 180px;
+    text-align: center;
 }
-.child p a{
+.child h3 ,.child3 h3{
+    padding: 20px 0px;
+    width: max-content;
+}
+.child3 p a{
     color: rgb(26, 188, 156);
 }
 .child ul{
@@ -336,5 +343,11 @@ input::placeholder,textarea::placeholder{
     }
     nav .second-nav ul{
         display: none;
+    }
+    .second-about ul li p{
+        width: 260px;
+    }
+    .second-about ul li{
+        padding: 0px;
     }
 }
