@@ -32,7 +32,11 @@ nav .second-nav ul {
     list-style: none;
 }
 
-nav .icon-nav {
+nav button {
+    width: 15px;
+    height: 15px;
+    background: none;
+    color: white;
     display: none;
 }
 
@@ -424,7 +428,7 @@ textarea::placeholder {
         font-size: 0.8rem;
     }
 
-    nav .icon-nav {
+    nav .icon-nav,nav button {
         display: block;
     }
 
